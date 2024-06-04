@@ -11,12 +11,12 @@ export default function updateStudentGradeByCity(list, city, newGrade) {
           student.grade = studentGrade.grade;
         }
 
-	if (!student.hasOwnProperty('grade')) {
+        if (!student.hasOwnProperty('grade')) {
           student.grade = 'N/A';
         }
         return student;
-    });
+      });
 
-    return student;
-  });
+      return student;
+    });
 }
